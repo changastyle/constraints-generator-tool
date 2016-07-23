@@ -37,7 +37,7 @@ public class ConstraintsGenerator
         
         
         
-        System.out.println("ALTER TABLE `"+nombreTabla1+"` ADD CONSTRAINT `" + nombreTabla1 + "->" + nombreTabla2 + "` FOREIGN KEY (`" + nombreFK + "`) REFERENCES `" + nombreTabla1 + "`(`id`) ON DELETE RESTRICT ON UPDATE CASCADE");
+        System.out.println("ALTER TABLE `"+nombreTabla1+"` ADD CONSTRAINT `" + nombreTabla1 + "->" + nombreTabla2 + "` FOREIGN KEY (`" + nombreFK + "`) REFERENCES `" + nombreTabla2 + "`(`id`) ON DELETE RESTRICT ON UPDATE CASCADE");
     }
 
     private static String parsearFK(String nombreTabla2)
